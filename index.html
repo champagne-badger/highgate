@@ -12,11 +12,29 @@ body {
   margin: 0;
   padding: 0;
 }
+.nav-links {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+.nav-links a:hover {
+  opacity: 1;
+}
 .header {
   text-align: center;
   padding: 60px 20px;
   border-bottom: 2px solid rgba(255,255,255,0.6);
   background-color: #2285f7;
+  position: relative;
 }
 .header h1 {
   font-size: 2.5em;
@@ -174,12 +192,24 @@ footer {
 @media (max-width: 768px) {
   .header h1 { font-size: 2em; }
   .grid { grid-template-columns: 1fr; }
+  .nav-links {
+    position: static;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
 }
 </style>
 </head>
 <body>
 
 <div class="header">
+  <div class="nav-links">
+    <a href="#gastropubs">Gastropubs</a>
+    <a href="#pubs">Pubs & Bars</a>
+    <a href="#cafes">Cafes</a>
+    <a href="#restaurants">Restaurants</a>
+  </div>
   <h1>Where to Eat & Drink in Highgate N6</h1>
   <p>A Local Guide to North London's Best Spots</p>
 </div>
@@ -192,22 +222,21 @@ footer {
 
   <div class="ad-box">Advertisement Space</div>
 
-  <div class="section">
-    <h2>Award-Winning Gastropubs</h2>
+  <div class="section" id="gastropubs">
+    <h2>Highgate's Best Award-Winning Gastropubs</h2>
     <div class="grid">
+      <div class="card">
+        <div class="card-top">
+          <div class="venue-name">The Red Lion & Sun</div>
+          <div class="rating">★ Top 10 UK</div>
+        </div>
+        <div class="type">Gastropub</div>
+        <div class="location">📍 25 North Road, N6 4BE</div>
+        <div class="description">Consistently ranked among Britain's best gastropubs since the 16th century. Daily changing menu featuring rustic modern British cuisine with premium ingredients from Natoora, Rossmore Oysters, and Highgate Butchers.</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=The+Red+Lion+and+Sun+25+North+Road+N6+4BE" target="_blank" class="map-link">View on Map</a>
+      </div>
 
 ```
-  <div class="card">
-    <div class="card-top">
-      <div class="venue-name">The Red Lion & Sun</div>
-      <div class="rating">★ Top 10 UK</div>
-    </div>
-    <div class="type">Gastropub</div>
-    <div class="location">📍 25 North Road, N6 4BE</div>
-    <div class="description">Consistently ranked among Britain's best gastropubs since the 16th century. Daily changing menu featuring rustic modern British cuisine with premium ingredients from Natoora, Rossmore Oysters, and Highgate Butchers.</div>
-    <a href="https://www.google.com/maps/search/?api=1&query=The+Red+Lion+and+Sun+25+North+Road+N6+4BE" target="_blank" class="map-link">View on Map</a>
-  </div>
-
   <div class="card">
     <div class="card-top">
       <div class="venue-name">The Bull</div>
@@ -237,22 +266,21 @@ footer {
 
   <div class="ad-box">Advertisement Space</div>
 
-  <div class="section">
-    <h2>Traditional Pubs & Bars</h2>
+  <div class="section" id="pubs">
+    <h2>Highgate's Best Traditional Pubs & Bars</h2>
     <div class="grid">
+      <div class="card">
+        <div class="card-top">
+          <div class="venue-name">The Wrestlers</div>
+          <div class="rating">★ 4.6</div>
+        </div>
+        <div class="type">Traditional English Pub</div>
+        <div class="location">📍 98 North Road, N6 4AA</div>
+        <div class="description">Standing since 1547, a hidden gem two minutes from Highgate Village. Original fireplace, wooden furniture, stained glass, and charming beer garden.</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=The+Wrestlers+98+North+Road+N6+4AA" target="_blank" class="map-link">View on Map</a>
+      </div>
 
 ```
-  <div class="card">
-    <div class="card-top">
-      <div class="venue-name">The Wrestlers</div>
-      <div class="rating">★ 4.6</div>
-    </div>
-    <div class="type">Traditional English Pub</div>
-    <div class="location">📍 98 North Road, N6 4AA</div>
-    <div class="description">Standing since 1547, a hidden gem two minutes from Highgate Village. Original fireplace, wooden furniture, stained glass, and charming beer garden.</div>
-    <a href="https://www.google.com/maps/search/?api=1&query=The+Wrestlers+98+North+Road+N6+4AA" target="_blank" class="map-link">View on Map</a>
-  </div>
-
   <div class="card">
     <div class="card-top">
       <div class="venue-name">The Duke's Head</div>
@@ -304,22 +332,21 @@ footer {
 
   <div class="ad-box">Advertisement Space</div>
 
-  <div class="section">
-    <h2>Coffee Shops & Cafes</h2>
+  <div class="section" id="cafes">
+    <h2>Best Coffee Shops & Cafes in Highgate</h2>
     <div class="grid">
+      <div class="card">
+        <div class="card-top">
+          <div class="venue-name">The Pavilion Cafe</div>
+          <div class="rating">★ 4.7</div>
+        </div>
+        <div class="type">Park Cafe</div>
+        <div class="location">📍 Waterlow Park, N6</div>
+        <div class="description">Scenic cafe inside Waterlow Park offering quiet, light-filled space. Unfussy but carefully prepared menu including avocado toast and proper coffee.</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=The+Pavilion+Cafe+Waterlow+Park+Highgate+N6" target="_blank" class="map-link">View on Map</a>
+      </div>
 
 ```
-  <div class="card">
-    <div class="card-top">
-      <div class="venue-name">The Pavilion Cafe</div>
-      <div class="rating">★ 4.7</div>
-    </div>
-    <div class="type">Park Cafe</div>
-    <div class="location">📍 Waterlow Park, N6</div>
-    <div class="description">Scenic cafe inside Waterlow Park offering quiet, light-filled space. Unfussy but carefully prepared menu including avocado toast and proper coffee.</div>
-    <a href="https://www.google.com/maps/search/?api=1&query=The+Pavilion+Cafe+Waterlow+Park+Highgate+N6" target="_blank" class="map-link">View on Map</a>
-  </div>
-
   <div class="card">
     <div class="card-top">
       <div class="venue-name">Monmouth Coffee</div>
@@ -363,22 +390,21 @@ footer {
 
   </div>
 
-  <div class="section">
-    <h2>Restaurants & Eateries</h2>
+  <div class="section" id="restaurants">
+    <h2>Top Restaurants & Eateries in Highgate N6</h2>
     <div class="grid">
+      <div class="card">
+        <div class="card-top">
+          <div class="venue-name">Archie's</div>
+          <div class="rating">★ 4.5</div>
+        </div>
+        <div class="type">All-Day Eatery</div>
+        <div class="location">📍 Near Archway, N6</div>
+        <div class="description">Buzzy neighborhood eatery serving food all day while selling houseplants. Tacos and salads at lunch, sophisticated global plates in evening.</div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Archies+Archway+Highgate+N6" target="_blank" class="map-link">View on Map</a>
+      </div>
 
 ```
-  <div class="card">
-    <div class="card-top">
-      <div class="venue-name">Archie's</div>
-      <div class="rating">★ 4.5</div>
-    </div>
-    <div class="type">All-Day Eatery</div>
-    <div class="location">📍 Near Archway, N6</div>
-    <div class="description">Buzzy neighborhood eatery serving food all day while selling houseplants. Tacos and salads at lunch, sophisticated global plates in evening.</div>
-    <a href="https://www.google.com/maps/search/?api=1&query=Archies+Archway+Highgate+N6" target="_blank" class="map-link">View on Map</a>
-  </div>
-
   <div class="card">
     <div class="card-top">
       <div class="venue-name">Turkuaz Brasserie</div>
