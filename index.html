@@ -49,12 +49,6 @@
             margin: 0 auto;
             padding: 20px;
         }
-        .intro {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.7;
-        }
         .section {
             margin: 60px 0;
             padding: 40px 0;
@@ -83,9 +77,8 @@
             transform: translateY(-3px);
             border-color: rgba(255,255,255,0.9);
         }
-        /* Styling for the new Interactive Map Card */
         .map-card {
-            padding: 10px; /* Reduced padding to let the map shine */
+            padding: 10px;
             background-color: rgba(255, 255, 255, 0.05);
             border: 2px dashed rgba(255, 255, 255, 0.4);
             min-height: 350px;
@@ -94,19 +87,17 @@
             font-size: 1em;
             margin: 10px;
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         .map-container {
             flex-grow: 1;
             width: 100%;
             height: 100%;
             border: none;
-            filter: grayscale(1) invert(1) contrast(1.2); /* Stylized to match your blue theme */
-            opacity: 0.8;
-        }
-        .card-top {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 10px;
+            /* Applying the Blue & White Blueprint Filter */
+            filter: grayscale(1) invert(1) sepia(100%) hue-rotate(180deg) saturate(300%) brightness(1.1);
+            opacity: 0.9;
         }
         .venue-name {
             font-size: 1.3em;
@@ -117,11 +108,6 @@
             padding: 3px 8px;
             border-radius: 3px;
             font-size: 0.9em;
-        }
-        .type {
-            font-size: 0.9em;
-            margin-bottom: 5px;
-            opacity: 0.8;
         }
         .location {
             font-size: 0.85em;
@@ -146,43 +132,11 @@
         .map-link:hover {
             background-color: rgba(255,255,255,0.15);
         }
-        .ad-box {
-            border: 2px solid rgba(255,255,255,0.3);
-            padding: 40px;
-            text-align: center;
-            margin: 60px auto;
-            max-width: 900px;
-            opacity: 0.6;
-        }
-        .tip-box {
-            border: 2px solid rgba(255,255,255,0.6);
-            padding: 25px;
-            margin: 30px 0;
-        }
-        .highlight {
-            background-color: rgba(255,255,255,0.1);
-            padding: 20px;
-            margin: 20px 0;
-            border-left: 2px solid rgba(255,255,255,0.4);
-        }
-        .info-section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
         footer {
             text-align: center;
             padding: 40px;
             font-size: 0.85em;
             border-top: 2px solid rgba(255,255,255,0.6);
-            opacity: 0.8;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                position: static;
-                justify-content: center;
-                margin-top: 20px;
-            }
         }
     </style>
 </head>
@@ -196,134 +150,117 @@
         <a href="#restaurants">Restaurants</a>
     </div>
     <h1>Where to Eat & Drink in Highgate N6</h1>
-    <p>A Local Guide to North London's Best Spots</p>
+    <p>A Curated Blueprints Guide to North London</p>
 </div>
 
 <div class="container">
-    <div class="intro">
-        <p>Nestled in leafy North London, Highgate N6 offers a food and drink scene that perfectly matches its village charm. From historic gastropubs frequented by literary legends to cozy cafes tucked into scenic parks, this guide covers the best spots to eat and drink in one of London's most atmospheric neighborhoods.</p>
-    </div>
-
     <div class="section" id="gastropubs">
-        <h2>Highgate's Best Award-Winning Gastropubs</h2>
+        <h2>Award-Winning Gastropubs</h2>
         <div class="grid">
             <div class="card">
-                <div class="card-top"><div class="venue-name">The Red Lion & Sun</div><div class="rating">★ Top 10</div></div>
-                <div class="type">Gastropub</div>
-                <div class="location">📍 25 North Road, N6 4BE</div>
-                <div class="description">Consistently ranked among Britain's best. Rustic modern British cuisine with premium ingredients.</div>
-                <a href="https://maps.app.goo.gl/3X5v2VdGv7M9p3uBA" target="_blank" class="map-link">View Details</a>
+
+http://googleusercontent.com/map_location_reference/1
+                <div class="venue-name">[The Red Lion & Sun](http://googleusercontent.com/map_location_reference/0)</div>
+                <div class="location">25 North Road, N6 4BE</div>
+                <div class="description">One of the UK's top-rated pubs, known for its incredible garden and seasonal British menu.</div>
+                <a href="https://maps.google.com/?cid=13504111726409301325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" class="map-link">View on Map</a>
             </div>
             <div class="card">
-                <div class="card-top"><div class="venue-name">The Bull</div><div class="rating">★ 4.5</div></div>
-                <div class="type">Gastropub with Microbrewery</div>
-                <div class="location">📍 13 North Hill, N6</div>
-                <div class="description">Lively neighborhood gastropub with huge leafy terrace and on-site brewery.</div>
-                <a href="https://maps.app.goo.gl/h6N9T6v5W4R2x7y8A" target="_blank" class="map-link">View Details</a>
-            </div>
-            <div class="card">
-                <div class="card-top"><div class="venue-name">The Flask</div><div class="rating">★ 4.4</div></div>
-                <div class="type">Historic Fuller's Pub</div>
-                <div class="location">📍 77 Highgate West Hill, N6</div>
-                <div class="description">A North London institution with centuries of history and refined pub classics.</div>
-                <a href="https://maps.app.goo.gl/k8M4T9v2W1R3x4y5B" target="_blank" class="map-link">View Details</a>
+
+http://googleusercontent.com/map_location_reference/3
+                <div class="venue-name">[Bull Highgate](http://googleusercontent.com/map_location_reference/2)</div>
+                <div class="location">13 North Hill, N6 4AB</div>
+                <div class="description">A stylish pub featuring its own microbrewery and a fantastic heated terrace.</div>
+                <a href="https://maps.google.com/?cid=14402675288371341390&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" class="map-link">View on Map</a>
             </div>
             <div class="card map-card">
-                <h3>📍 Gastropubs Map</h3>
-                <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d4960.672018803456!2d-0.1537233240801865!3d51.57124970631165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgastropubs!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"></iframe>
+                <h3>Gastropubs Blueprint</h3>
+                <iframe class="map-container" src="https://maps.google.com/?cid=13504111726409301325&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"></iframe>
             </div>
         </div>
     </div>
 
     <div class="section" id="pubs">
-        <h2>Highgate's Best Traditional Pubs & Bars</h2>
+        <h2>Historic Pubs & Bars</h2>
         <div class="grid">
             <div class="card">
-                <div class="card-top"><div class="venue-name">The Wrestlers</div><div class="rating">★ 4.6</div></div>
-                <div class="type">Traditional English Pub</div>
-                <div class="location">📍 98 North Road, N6</div>
-                <div class="description">Standing since 1547. Original fireplace and a truly charming beer garden.</div>
-                <a href="#" class="map-link">View Details</a>
+
+http://googleusercontent.com/map_location_reference/5
+                <div class="venue-name">[The Flask, Highgate](http://googleusercontent.com/map_location_reference/4)</div>
+                <div class="location">77 Highgate W Hill, N6 6BU</div>
+                <div class="description">Step back in time at this iconic 17th-century haunt with cozy snugs and real fires.</div>
+                <a href="https://maps.google.com/?cid=14643180280571162147&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" class="map-link">View on Map</a>
             </div>
             <div class="card">
-                <div class="card-top"><div class="venue-name">The Boogaloo</div><div class="rating">★ 4.5</div></div>
-                <div class="type">Rock 'n' Roll Bar</div>
-                <div class="location">📍 Archway Road, N6</div>
-                <div class="description">Legendary music venue with an award-winning jukebox and rich musical history.</div>
-                <a href="#" class="map-link">View Details</a>
-            </div>
-            <div class="card">
-                <div class="card-top"><div class="venue-name">The Gatehouse</div><div class="rating">★ 4.4</div></div>
-                <div class="type">Spanish Tapas Pub</div>
-                <div class="location">📍 1 North Road, N6</div>
-                <div class="description">Imposing pub with a sun-drenched garden and a leading theatre upstairs.</div>
-                <a href="#" class="map-link">View Details</a>
+
+http://googleusercontent.com/map_location_reference/7
+                <div class="venue-name">[The Wrestlers](http://googleusercontent.com/map_location_reference/6)</div>
+                <div class="location">98 North Rd, N6 4AA</div>
+                <div class="description">A local favorite since 1547, offering traditional atmosphere and stained-glass beauty.</div>
+                <a href="https://maps.google.com/?cid=4296373816027538434&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" class="map-link">View on Map</a>
             </div>
             <div class="card map-card">
-                <h3>📍 Pubs & Bars Map</h3>
-                <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9919.458997389816!2d-0.15545279619140625!3d51.57076412574044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1spubs!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"></iframe>
+                <h3>Pubs & Bars Blueprint</h3>
+                <iframe class="map-container" src="https://maps.google.com/?cid=14643180280571162147&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"></iframe>
             </div>
         </div>
     </div>
 
     <div class="section" id="cafes">
-        <h2>Best Coffee Shops & Cafes in Highgate</h2>
+        <h2>Leisurely Cafes</h2>
         <div class="grid">
             <div class="card">
-                <div class="card-top"><div class="venue-name">The Pavilion Cafe</div><div class="rating">★ 4.7</div></div>
-                <div class="type">Park Cafe</div>
-                <div class="location">📍 Waterlow Park, N6</div>
-                <div class="description">Scenic cafe inside Waterlow Park. A quiet, light-filled space for brunch.</div>
-                <a href="#" class="map-link">View Details</a>
+
+http://googleusercontent.com/map_location_reference/9
+                <div class="venue-name">[The Pavilion Cafe](http://googleusercontent.com/map_location_reference/8)</div>
+                <div class="location">Waterlow Park, N10 3JN</div>
+                <div class="description">A bright, airy spot within Waterlow Park perfect for a coffee after a walk.</div>
+                <a href="https://maps.google.com/?cid=5971211063095142642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" class="map-link">View on Map</a>
             </div>
             <div class="card">
-                <div class="card-top"><div class="venue-name">Queen's Wood Cafe</div><div class="rating">★ 4.8</div></div>
-                <div class="type">Hidden Woods Cafe</div>
-                <div class="location">📍 Queen's Wood, N6</div>
-                <div class="description">Occupying a restored 1898 lodge. Wholesome, homemade food in the woods.</div>
-                <a href="#" class="map-link">View Details</a>
+
+http://googleusercontent.com/map_location_reference/11
+                <div class="venue-name">[Queen's Wood Cafe](http://googleusercontent.com/map_location_reference/10)</div>
+                <div class="location">42 Muswell Hill Rd, N10 3JP</div>
+                <div class="description">An organic, woodland retreat serving vegetarian-friendly fare in a restored lodge.</div>
+                <a href="https://maps.google.com/?cid=12116234696496620419&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" class="map-link">View on Map</a>
             </div>
             <div class="card map-card">
-                <h3>📍 Cafe Map</h3>
-                <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9917.935102581696!2d-0.15573715112304688!3d51.57752697858999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scafes!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"></iframe>
+                <h3>Cafes Blueprint</h3>
+                <iframe class="map-container" src="https://maps.google.com/?cid=5971211063095142642&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"></iframe>
             </div>
         </div>
     </div>
 
     <div class="section" id="restaurants">
-        <h2>Top Restaurants & Eateries in Highgate N6</h2>
+        <h2>Local Restaurants</h2>
         <div class="grid">
             <div class="card">
-                <div class="card-top"><div class="venue-name">Archie's</div><div class="rating">★ 4.5</div></div>
-                <div class="type">All-Day Eatery</div>
-                <div class="location">📍 Near Archway, N6</div>
-                <div class="description">Buzzy neighborhood spot serving global plates while selling houseplants.</div>
-                <a href="#" class="map-link">View Details</a>
+
+http://googleusercontent.com/map_location_reference/13
+                <div class="venue-name">[Archie's](http://googleusercontent.com/map_location_reference/12)</div>
+                <div class="location">36 Highgate Hl, N19 5NL</div>
+                <div class="description">A chic all-day dining spot near the village, famous for brunch and leafy vibes.</div>
+                <a href="https://maps.google.com/?cid=377593640228207590&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" class="map-link">View on Map</a>
             </div>
             <div class="card">
-                <div class="card-top"><div class="venue-name">Lure Fish Kitchen</div><div class="rating">★ 4.5</div></div>
-                <div class="type">Seafood Restaurant</div>
-                <div class="location">📍 Highgate, N6</div>
-                <div class="description">Seafood-focused dining featuring fresh, seasonal recipes and quality fish.</div>
-                <a href="#" class="map-link">View Details</a>
+
+http://googleusercontent.com/map_location_reference/15
+                <div class="venue-name">[Lure Fish Kitchen](http://googleusercontent.com/map_location_reference/14)</div>
+                <div class="location">56 Chetwynd Rd, NW5 1DJ</div>
+                <div class="description">A nearby neighborhood gem serving expertly prepared, sustainable seafood.</div>
+                <a href="https://maps.google.com/?cid=4215771893552212702&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" class="map-link">View on Map</a>
             </div>
             <div class="card map-card">
-                <h3>📍 Restaurants Map</h3>
-                <iframe class="map-container" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d9919.531206899451!2d-0.15045353125!3d51.57044237858999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srestaurants!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"></iframe>
+                <h3>Restaurants Blueprint</h3>
+                <iframe class="map-container" src="https://maps.google.com/?cid=377593640228207590&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"></iframe>
             </div>
-        </div>
-    </div>
-
-    <div class="info-section">
-        <h2>Planning Your Visit</h2>
-        <div class="highlight">
-            <strong>Getting There:</strong> Highgate is served by Highgate tube station (Northern Line). The village is approximately a 15-minute walk from the station.
         </div>
     </div>
 </div>
 
 <footer>
-    <p>© 2026 Highgate Food & Drink Guide</p>
+    <p>© 2026 Highgate Food & Drink Guide | Blue & White Edition</p>
 </footer>
 
 </body>
