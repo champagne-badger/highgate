@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Discover the best places to eat and drink in Highgate N6. From award-winning gastropubs to cozy cafes, find your perfect spot in North London's most charming village.">
-    <meta name="keywords" content="Highgate restaurants, Highgate pubs, cafes Highgate, where to eat Highgate N6, best food Highgate Village, North London dining">
-    <title>Where to Eat & Drink in Highgate N6 - Complete Local Guide</title>
+    <title>Where to Eat & Drink in Highgate N6</title>
     <style>
         * {
             margin: 0;
@@ -16,15 +15,15 @@
 
 ```
     body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
         line-height: 1.6;
-        color: #fff;
-        background: #1a2332;
+        color: #ffffff;
+        background-color: #1a2332;
         font-size: 15px;
     }
     
     header {
-        background: #1a2332;
+        background-color: #1a2332;
         padding: 80px 20px 60px;
         text-align: center;
         border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -34,15 +33,13 @@
         font-size: 2.5em;
         margin-bottom: 15px;
         font-weight: 300;
-        letter-spacing: 0.02em;
-        color: #fff;
+        color: #ffffff;
     }
     
     .subtitle {
         font-size: 0.95em;
         color: rgba(255,255,255,0.6);
         font-weight: 300;
-        letter-spacing: 0.05em;
     }
     
     .container {
@@ -63,27 +60,21 @@
         margin-bottom: 20px;
         color: rgba(255,255,255,0.8);
         font-weight: 300;
-        line-height: 1.8;
     }
     
     .ad-space {
-        background: rgba(255,255,255,0.03);
+        background-color: rgba(255,255,255,0.03);
         padding: 40px;
         margin: 60px auto;
         text-align: center;
         border: 1px solid rgba(255,255,255,0.1);
         min-height: 120px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         max-width: 900px;
     }
     
     .ad-placeholder {
         color: rgba(255,255,255,0.3);
         font-size: 0.85em;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
     }
     
     section {
@@ -93,11 +84,10 @@
     
     h2 {
         font-size: 1.8em;
-        color: #fff;
+        color: #ffffff;
         margin-bottom: 50px;
         font-weight: 300;
         text-align: center;
-        letter-spacing: 0.05em;
     }
     
     .venues-grid {
@@ -108,15 +98,14 @@
     }
     
     .venue-card {
-        background: rgba(255,255,255,0.05);
+        background-color: rgba(255,255,255,0.05);
         border: 1px solid rgba(255,255,255,0.1);
         padding: 30px;
         transition: all 0.3s ease;
-        cursor: pointer;
     }
     
     .venue-card:hover {
-        background: rgba(255,255,255,0.08);
+        background-color: rgba(255,255,255,0.08);
         border-color: rgba(255,255,255,0.2);
         transform: translateY(-2px);
     }
@@ -131,33 +120,27 @@
     .venue-name {
         font-size: 1.3em;
         font-weight: 400;
-        color: #fff;
-        letter-spacing: 0.02em;
+        color: #ffffff;
     }
     
     .venue-rating {
-        background: rgba(255,255,255,0.1);
+        background-color: rgba(255,255,255,0.1);
         padding: 4px 10px;
         border-radius: 3px;
         font-size: 0.9em;
-        color: #fff;
-        white-space: nowrap;
+        color: #ffffff;
     }
     
     .venue-type {
         color: rgba(255,255,255,0.5);
         margin-bottom: 8px;
         font-size: 0.9em;
-        letter-spacing: 0.03em;
     }
     
     .venue-location {
         color: rgba(255,255,255,0.4);
         font-size: 0.85em;
         margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 5px;
     }
     
     .venue-description {
@@ -169,46 +152,17 @@
     
     .view-map {
         display: inline-block;
-        color: #fff;
+        color: #ffffff;
         text-decoration: none;
         font-size: 0.85em;
         padding: 8px 16px;
         border: 1px solid rgba(255,255,255,0.2);
         margin-top: 10px;
         transition: all 0.3s ease;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
     }
     
     .view-map:hover {
-        background: rgba(255,255,255,0.1);
-        border-color: rgba(255,255,255,0.4);
-    }
-    
-    .area-filters {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 50px;
-    }
-    
-    .filter-btn {
-        padding: 10px 20px;
-        background: transparent;
-        border: 1px solid rgba(255,255,255,0.2);
-        color: rgba(255,255,255,0.6);
-        cursor: pointer;
-        transition: all 0.3s ease;
-        font-size: 0.9em;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-    
-    .filter-btn:hover,
-    .filter-btn.active {
-        background: rgba(255,255,255,0.1);
-        color: #fff;
+        background-color: rgba(255,255,255,0.1);
         border-color: rgba(255,255,255,0.4);
     }
     
@@ -220,41 +174,36 @@
     
     .info-section h3 {
         font-size: 1.3em;
-        color: #fff;
+        color: #ffffff;
         margin-top: 40px;
         margin-bottom: 20px;
         font-weight: 300;
-        letter-spacing: 0.03em;
     }
     
     .info-section p {
         color: rgba(255,255,255,0.7);
         font-weight: 300;
-        line-height: 1.8;
         margin-bottom: 20px;
     }
     
     .highlight {
-        background: rgba(255,255,255,0.05);
+        background-color: rgba(255,255,255,0.05);
         padding: 25px;
         margin: 30px 0;
         border-left: 2px solid rgba(255,255,255,0.3);
-        font-weight: 300;
     }
     
     .local-tip {
-        background: rgba(255,255,255,0.05);
+        background-color: rgba(255,255,255,0.05);
         padding: 30px;
         margin: 40px 0;
         border: 1px solid rgba(255,255,255,0.1);
     }
     
     .local-tip h4 {
-        color: #fff;
+        color: #ffffff;
         margin-bottom: 15px;
         font-weight: 300;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
         font-size: 0.9em;
     }
     
@@ -264,7 +213,7 @@
     }
     
     footer {
-        background: #0f1419;
+        background-color: #0f1419;
         color: rgba(255,255,255,0.5);
         padding: 40px 20px;
         text-align: center;
@@ -275,7 +224,6 @@
         margin-bottom: 10px;
         font-size: 0.85em;
         font-weight: 300;
-        letter-spacing: 0.05em;
     }
     
     @media (max-width: 768px) {
@@ -289,10 +237,6 @@
         
         .venues-grid {
             grid-template-columns: 1fr;
-        }
-        
-        .ad-space {
-            margin: 40px 0;
         }
     }
 </style>
@@ -313,9 +257,8 @@
         <p>Whether you're looking for a Sunday roast after a walk on Hampstead Heath, a specialty coffee in a peaceful setting, or simply the perfect pint in a historic pub, Highgate has something special waiting for you.</p>
     </div>
 
-    <!-- AD SPACE 1 -->
     <div class="ad-space">
-        <div class="ad-placeholder">Advertisement</div>
+        <div class="ad-placeholder">Advertisement Space</div>
     </div>
 
     <section>
@@ -330,7 +273,7 @@
                 <div class="venue-type">Gastropub</div>
                 <div class="venue-location">📍 25 North Road, N6 4BE</div>
                 <div class="venue-description">
-                    Consistently ranked among Britain's best gastropubs since the 16th century. Daily changing menu featuring rustic modern British cuisine with premium ingredients from Natoora, Rossmore Oysters, and Highgate Butchers. Exceptional wine list.
+                    Consistently ranked among Britain's best gastropubs since the 16th century. Daily changing menu featuring rustic modern British cuisine with premium ingredients from Natoora, Rossmore Oysters, and Highgate Butchers.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Red+Lion+and+Sun+25+North+Road+N6+4BE" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -343,7 +286,7 @@
                 <div class="venue-type">Gastropub with Microbrewery</div>
                 <div class="venue-location">📍 13 North Hill, N6</div>
                 <div class="venue-description">
-                    Lively neighborhood gastropub with huge leafy terrace. On-site microbrewery offering 21 taps of craft beers and seasonal ales. Thursday steak nights and daily pie specials. Friday happy hour 5-6pm.
+                    Lively neighborhood gastropub with huge leafy terrace. On-site microbrewery offering 21 taps of craft beers and seasonal ales. Thursday steak nights and daily pie specials.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Bull+13+North+Hill+N6+Highgate" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -356,16 +299,15 @@
                 <div class="venue-type">Historic Fuller's Pub</div>
                 <div class="venue-location">📍 77 Highgate West Hill, N6 6BU</div>
                 <div class="venue-description">
-                    A North London institution with centuries of history. Fuller's pub combining heritage with quality food and drink. Refined pub classics from fresh seasonal ingredients. Real fire and cozy interiors.
+                    A North London institution with centuries of history. Fuller's pub combining heritage with quality food and drink. Refined pub classics from fresh seasonal ingredients.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Flask+77+Highgate+West+Hill+N6+6BU" target="_blank" class="view-map">View on Map</a>
             </div>
         </div>
     </section>
 
-    <!-- AD SPACE 2 -->
     <div class="ad-space">
-        <div class="ad-placeholder">Advertisement</div>
+        <div class="ad-placeholder">Advertisement Space</div>
     </div>
 
     <section>
@@ -380,7 +322,7 @@
                 <div class="venue-type">Traditional English Pub</div>
                 <div class="venue-location">📍 98 North Road, N6 4AA</div>
                 <div class="venue-description">
-                    Standing since 1547, a hidden gem two minutes from Highgate Village. Original fireplace, wooden furniture, stained glass, and charming beer garden. Excellent Sunday roasts including vegetarian and vegan options.
+                    Standing since 1547, a hidden gem two minutes from Highgate Village. Original fireplace, wooden furniture, stained glass, and charming beer garden.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Wrestlers+98+North+Road+N6+4AA" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -393,7 +335,7 @@
                 <div class="venue-type">Country Music Honky Tonk</div>
                 <div class="venue-location">📍 16 Highgate High Street, N6 5JG</div>
                 <div class="venue-description">
-                    North London's only country music-themed American dive bar. Over 100 different bourbons and whiskeys. Live music, country karaoke, and American fare from Rack City Ribs.
+                    North London's only country music-themed American dive bar. Over 100 different bourbons and whiskeys. Live music and country karaoke.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Dukes+Head+16+Highgate+High+Street+N6+5JG" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -406,7 +348,7 @@
                 <div class="venue-type">Rock 'n' Roll Bar</div>
                 <div class="venue-location">📍 Archway Road, N6</div>
                 <div class="venue-description">
-                    Legendary live music venue with award-winning eclectic jukebox. Musical legends including Iggy Pop, Ronnie Wood, and The Pogues contributed albums. Perfect for music lovers.
+                    Legendary live music venue with award-winning eclectic jukebox. Musical legends including Iggy Pop and The Pogues contributed albums.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Boogaloo+Archway+Road+Highgate+N6" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -416,10 +358,10 @@
                     <div class="venue-name">The Gatehouse</div>
                     <div class="venue-rating">★ 4.4</div>
                 </div>
-                <div class="venue-type">Spanish Tapas Pub with Theatre</div>
+                <div class="venue-type">Spanish Tapas Pub</div>
                 <div class="venue-location">📍 1 North Road, N6</div>
                 <div class="venue-description">
-                    Imposing pub offering enjoyable tapas alongside traditional pub fare. Sun-drenched beer garden and cozy interior. Houses one of London's leading off-West End theatres upstairs.
+                    Imposing pub offering tapas alongside traditional pub fare. Sun-drenched beer garden and houses a leading off-West End theatre upstairs.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Gatehouse+1+North+Road+N6+Highgate" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -432,16 +374,15 @@
                 <div class="venue-type">Contemporary Gastropub</div>
                 <div class="venue-location">📍 37 Highgate High Street, N6 5JT</div>
                 <div class="venue-description">
-                    Vibrant interiors meet hearty grub and impressive craft pints. Popular for after-work drinks, Sunday roasts, and weekend bottomless brunches in relaxed atmosphere.
+                    Vibrant interiors meet hearty grub and impressive craft pints. Popular for after-work drinks, Sunday roasts, and weekend bottomless brunches.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Angel+Inn+37+Highgate+High+Street+N6+5JT" target="_blank" class="view-map">View on Map</a>
             </div>
         </div>
     </section>
 
-    <!-- AD SPACE 3 -->
     <div class="ad-space">
-        <div class="ad-placeholder">Advertisement</div>
+        <div class="ad-placeholder">Advertisement Space</div>
     </div>
 
     <section>
@@ -456,7 +397,7 @@
                 <div class="venue-type">Park Cafe</div>
                 <div class="venue-location">📍 Waterlow Park, N6</div>
                 <div class="venue-description">
-                    Scenic cafe inside Waterlow Park offering quiet, light-filled space. Unfussy but carefully prepared menu including avocado toast and proper coffee. Perfect post-walk refreshment.
+                    Scenic cafe inside Waterlow Park offering quiet, light-filled space. Unfussy but carefully prepared menu including avocado toast and proper coffee.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=The+Pavilion+Cafe+Waterlow+Park+Highgate+N6" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -469,7 +410,7 @@
                 <div class="venue-type">Specialty Coffee</div>
                 <div class="venue-location">📍 31 North Road, N6 4BE</div>
                 <div class="venue-description">
-                    Renowned coffee roasters bringing expertise to Highgate with high-quality beans and expert preparation. A favorite for coffee enthusiasts seeking the perfect brew.
+                    Renowned coffee roasters bringing expertise to Highgate with high-quality beans and expert preparation. A favorite for coffee enthusiasts.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Monmouth+Coffee+31+North+Road+N6+4BE" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -482,7 +423,7 @@
                 <div class="venue-type">Tea Shop</div>
                 <div class="venue-location">📍 50 Highgate High Street, N6 5HX</div>
                 <div class="venue-description">
-                    Beautiful tea shop filled with adorable tea selections and traditional afternoon tea service. Perfect for quintessentially British tea experience in charming surroundings.
+                    Beautiful tea shop with traditional afternoon tea service. Perfect for quintessentially British tea experience in charming surroundings.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=High+Tea+of+Highgate+50+Highgate+High+Street+N6+5HX" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -495,7 +436,7 @@
                 <div class="venue-type">Hidden Woods Cafe</div>
                 <div class="venue-location">📍 Queen's Wood, N6</div>
                 <div class="venue-description">
-                    Tucked in the woods, occupying restored 1898 wood keeper's lodge. Wholesome, homemade food with seasonal produce from community garden. Uniquely peaceful setting surrounded by nature.
+                    Tucked in the woods, occupying restored 1898 wood keeper's lodge. Wholesome, homemade food with seasonal produce from community garden.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Queens+Wood+Cafe+Highgate+N6" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -503,7 +444,7 @@
 
         <div class="local-tip">
             <h4>Local Insider Tip</h4>
-            <p>For the best coffee shop experience, visit Vanilla on Jacksons Lane (269a Archway Road). Owner Anna creates exceptional homemade breads that locals rave about. The beetroot juice and carrot cake are legendary. Arrive outside peak lunch hours for the best chance of getting a table.</p>
+            <p>For the best coffee shop experience, visit Vanilla on Jacksons Lane. Owner Anna creates exceptional homemade breads that locals rave about. The beetroot juice and carrot cake are legendary.</p>
         </div>
     </section>
 
@@ -519,7 +460,7 @@
                 <div class="venue-type">All-Day Eatery</div>
                 <div class="venue-location">📍 Near Archway, N6</div>
                 <div class="venue-description">
-                    Buzzy neighborhood eatery serving food all day while selling houseplants. Sunny spot with indoor and outdoor tables. Tacos and salads at lunch, sophisticated global plates in evening.
+                    Buzzy neighborhood eatery serving food all day while selling houseplants. Tacos and salads at lunch, sophisticated global plates in evening.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Archies+Archway+Highgate+N6" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -532,7 +473,7 @@
                 <div class="venue-type">Turkish-Mediterranean</div>
                 <div class="venue-location">📍 Highgate, N6</div>
                 <div class="venue-description">
-                    Authentic Turkish flavors with patterned tiles and sunny interiors. Classic Mediterranean menu with standout brunch. Must try: Menemen (soft scrambled eggs with tomatoes and peppers).
+                    Authentic Turkish flavors with patterned tiles and sunny interiors. Must try: Menemen (soft scrambled eggs with tomatoes and peppers).
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Turkuaz+Brasserie+Highgate+N6" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -545,7 +486,7 @@
                 <div class="venue-type">New York Meets Sri Lanka</div>
                 <div class="venue-location">📍 Highgate, N6</div>
                 <div class="venue-description">
-                    Unexpected fusion of New York comfort food, Sri Lankan spice, and London cafe culture. Proper bagels, warming curries, generous cake slices, and excellent smoothies.
+                    Unexpected fusion of New York comfort food and Sri Lankan spice. Proper bagels, warming curries, generous cake slices, and excellent smoothies.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Cool+Carrot+Highgate+N6" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -558,7 +499,7 @@
                 <div class="venue-type">Indian Restaurant</div>
                 <div class="venue-location">📍 Highgate, N6</div>
                 <div class="venue-description">
-                    Popular for Indian meals and takeaways in intimate, traditional setting. Specializes in Bengali and Bangladeshi dishes with modern interpretations of classic recipes.
+                    Popular for Indian meals and takeaways. Specializes in Bengali and Bangladeshi dishes with modern interpretations of classic recipes.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Kiplings+Indian+Restaurant+Highgate+N6" target="_blank" class="view-map">View on Map</a>
             </div>
@@ -571,16 +512,15 @@
                 <div class="venue-type">Seafood Restaurant</div>
                 <div class="venue-location">📍 Highgate, N6</div>
                 <div class="venue-description">
-                    Seafood-focused dining featuring traditional fish and chips alongside inventive seasonal recipes. Modern dining room with cool blue tones. Fresh, quality seafood.
+                    Seafood-focused dining featuring traditional fish and chips alongside inventive seasonal recipes. Modern dining room with fresh, quality seafood.
                 </div>
                 <a href="https://www.google.com/maps/search/?api=1&query=Lure+Fish+Kitchen+Highgate+N6" target="_blank" class="view-map">View on Map</a>
             </div>
         </div>
     </section>
 
-    <!-- AD SPACE 4 -->
     <div class="ad-space">
-        <div class="ad-placeholder">Advertisement</div>
+        <div class="ad-placeholder">Advertisement Space</div>
     </div>
 
     <section>
@@ -592,25 +532,25 @@
             </div>
 
             <h3>Best Times to Visit</h3>
-            <p>Weekday lunchtimes offer a quieter experience at most venues, while weekends showcase Highgate's bustling village atmosphere. Sunday roasts at the gastropubs are extremely popular—book ahead or arrive early to secure a table.</p>
+            <p>Weekday lunchtimes offer a quieter experience at most venues, while weekends showcase Highgate's bustling village atmosphere. Sunday roasts at the gastropubs are extremely popular—book ahead or arrive early.</p>
 
             <h3>Combine with Nearby Attractions</h3>
-            <p>Make the most of your visit by exploring Highgate Cemetery (booking required), taking a walk on Hampstead Heath, or wandering through Waterlow Park and Highgate Woods. Many of the eateries mentioned above are perfect pit stops before or after outdoor activities.</p>
+            <p>Make the most of your visit by exploring Highgate Cemetery, taking a walk on Hampstead Heath, or wandering through Waterlow Park and Highgate Woods.</p>
 
             <div class="local-tip">
                 <h4>Weather Tip</h4>
-                <p>On sunny days, prioritize venues with outdoor spaces: The Bull's leafy terrace, The Red Lion & Sun's two beer gardens, or The Pavilion Cafe in Waterlow Park. Highgate's green spaces and outdoor dining options are among its greatest assets.</p>
+                <p>On sunny days, prioritize venues with outdoor spaces: The Bull's leafy terrace, The Red Lion & Sun's beer gardens, or The Pavilion Cafe in Waterlow Park.</p>
             </div>
 
             <h3>Price Ranges</h3>
-            <p>Highgate caters to various budgets. Cafes and traditional pubs offer affordable options, while award-winning gastropubs like The Red Lion & Sun command premium prices reflecting their exceptional quality. Most venues fall into the £10-25 per person range for meals, with gastropub dining averaging £40-75 per person including drinks.</p>
+            <p>Highgate caters to various budgets. Most venues fall into the £10-25 per person range for meals, with gastropub dining averaging £40-75 per person including drinks.</p>
         </div>
     </section>
 </div>
 
 <footer>
     <p>&copy; 2026 Highgate Food & Drink Guide</p>
-    <p>Information accurate as of January 2026. Please check individual venue websites for current opening hours and menus.</p>
+    <p>Information accurate as of January 2026</p>
 </footer>
 ```
 
